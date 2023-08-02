@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bai Jamjuree';
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: hsl(210, 10%, 33%);
+}
+
+h3 {
+  color: hsl(210, 10%, 33%);
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 26px;
+  color: hsl(201, 11%, 66%);
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-1 {
+  padding: 120px 0;
+}
+
+.effect-mobile {
+  display: none;
+}
+
+.effect-desktop {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  margin-bottom: 50px;
+}
+
+.logo img {
+  user-select: none;
+  width: 100px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button button {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 30px;
+  color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all .3s;
+}
+
+.button button:hover {
+  transform: scale(1.05);
+  color: rgba(255, 255, 255, 1);
+}
+
+.green button {
+  background-color: hsl(171, 66%, 44%);
+}
+
+.purple button {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.title-top {
+  margin-bottom: 130px;
+}
+
+.header-2 {
+  padding: 100px 0;
+}
+
+.column-text {
+  display: flex;
+  text-align: start;
+  align-items: center;
+  gap: 100px;
+  margin-right: 20rem;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.text-column p {
+  line-height: 35px;
+}
+
+.header-3 {
+  padding: 60px 0;
+}
+
+
+.title-top {
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  margin-bottom: 80px;
+}
+
+.row-text {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.text-row h1 {
+  font-size: 25px;
+}
+
+.text-row p {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.icon {
+  width: 40px;
+  margin-bottom: 50px;
+}
+
+.header-brands {
+  display: flex;
+  justify-content: center;
+  margin-top: 160px;
+  gap: 100px;
+}
+
+.header-5 {
+  padding: 160px 0;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 40px 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-footer img {
+  user-select: none;
+  width: 50px;
+}
+
+.column {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  line-height: 35px;
+}
+
+.column a {
+  color: hsl(210, 10%, 33%);
+  font-size: 16px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icons svg {
+  max-width: 30px;
+  margin: 5px;
+}
+
+.facebook-icon {
+  transition: all .3s;
+}
+
+.facebook-icon:hover path {
+  transition: all .3s ease-in;
+  fill: #3b4045;
+}
+
+.twitter-icon:hover path {
+  transition: all .3s ease-in;
+  fill: #3b4045;
+}
+
+.instagram-icon:hover path {
+  transition: all .3s ease-in;
+  fill: #3b4045;
+}
+
+@media (max-width: 750px) {
+  .effect-desktop {
+    display: none;
+  }
+
+  .header-5 {
+    padding: 110px 0;
+  }
+
+  .logo img {
+    user-select: none;
+    width: 150px;
+  }
+
+  .texts h1 {
+    font-size: 30px;
+  }
+
+  .texts h4 {
+    font-size: 14px;
+  }
+
+  .title-top h4 {
+    font-size: 15px;
+  }
+
+  .effect-mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  .column-text {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .text-column {
+    align-items: center;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .row-text {
+    flex-direction: column;
+  }
+
+  .header-brands {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .column {
+    align-items: center;
+  }
+
+  .column-text img {
+    user-select: none;
+    width: 300px;
+  }
+
+  .images img {
+    user-select: none;
+    width: 300px;
+  }
+}
